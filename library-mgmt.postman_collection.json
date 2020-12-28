@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "471bd1ba-a2f9-429d-b7d5-079a87ea4b2b",
+		"name": "library-mgmt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddBooks",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "5c47819f-4d53-40a1-86e0-904251bcd85c",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 5c47819f-4d53-40a1-86e0-904251bcd85c",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"title\":\"Compouter Networking\",\r\n\"author\" : \"rao\",\r\n\"subject\": \"abcd\",\r\n\"noOfBooks\" : 10,\r\n\"availableNoOfBooks\" : 10,\r\n\"category\" : \"Computer Science\",\r\n\"publicationDate\": \"2nd Decemeber 2012\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/books/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddMember",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"firstName\":\"Shashank\",\r\n\"lastName\" : \"rao\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBook",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"firstName\":\"Shashank\",\r\n\"lastName\" : \"rao\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddShelf",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"firstName\":\"Shashank\",\r\n\"lastName\" : \"rao\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReserveBook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"firstName\":\"Shashank\",\r\n\"lastName\" : \"rao\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
